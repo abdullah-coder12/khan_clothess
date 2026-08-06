@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KHAN CLOTHES | Premium Fashion</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900&family=Plus+Jakarta+Sans:wght@200;400;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script>
+
+tailwind.config = {
+
+theme:{
+extend:{
+
+colors:{
+gold:"#D4AF37",
+dark:"#050505"
+},
+
+fontFamily:{
+sans:["Plus Jakarta Sans","sans-serif"],
+display:["Playfair Display","serif"]
+}
+
+}
+
+}
+
+}
+
+</script>
+
+
+<style>
+
+
+body{
+
+background:#050505;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+
+/* HERO */
+
+.parallax-hero{
+
+
+background:
+
+linear-gradient(
+180deg,
+rgba(0,0,0,.55),
+rgba(5,5,5,1)
+),
+
+url("https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.parallax-hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+
+background:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,.75),
+transparent
+);
+
+
+animation:zoom 15s infinite alternate;
+
+}
+
+
+
+@keyframes zoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.08);
+}
+
+}
+
+
+
+.parallax-hero > div{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+/* NAV */
+
+.glass-nav{
+
+background:rgba(5,5,5,.65);
+
+backdrop-filter:blur(25px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+/* WHATSAPP */
+
+
+.whatsapp-float{
+
+position:fixed;
+
+right:35px;
+
+bottom:35px;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:35px;
+
+background:
+
+linear-gradient(
+135deg,
+#25d366,
+#128C7E
+);
+
+z-index:9999;
+
+animation:pulse 2s infinite;
+
+}
+
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+
+
+/* CARDS */
+
+
+.premium-card{
+
+background:
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.06),
+rgba(255,255,255,.01)
+);
+
+
+border:1px solid rgba(255,255,255,.08);
+
+
+transition:.6s;
+
+}
+
+
+.premium-card:hover{
+
+transform:translateY(-15px) scale(1.03);
+
+border-color:#D4AF37;
+
+box-shadow:0 30px 70px rgba(0,0,0,.8);
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body class="font-sans">
+
+
+
+<!-- WHATSAPP -->
+
+
+<a href="https://wa.me/923047469859"
+class="whatsapp-float">
+
+<i class="fab fa-whatsapp text-white"></i>
+
+</a>
+
+
+
+
+<!-- NAVBAR -->
+
+
+<nav class="fixed top-0 w-full z-[5000] glass-nav py-6 px-10">
+
+
+<div class="container mx-auto flex justify-between items-center">
+
+
+<div class="text-3xl font-display italic font-black">
+
+<span class="text-gold">
+KHAN
+</span>
+
+CLOTHES
+
+</div>
+
+
+
+<div class="hidden lg:flex gap-10 items-center text-xs uppercase tracking-widest font-bold">
+
+
+<a href="#" class="hover:text-gold">
+Home
+</a>
+
+
+<a href="#about" class="hover:text-gold">
+About
+</a>
+
+
+<a href="#collection" class="hover:text-gold">
+Collection
+</a>
+
+
+<a href="#contact" class="hover:text-gold">
+Contact
+</a>
+
+
+<a href="#collection"
+class="bg-gold text-black px-8 py-3 rounded-full">
+
+Shop Now
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- HERO SECTION -->
+
+
+<header class="parallax-hero flex items-center justify-center text-center">
+
+
+<div class="max-w-6xl px-6">
+
+
+<span class="text-gold tracking-[1em] uppercase text-[10px] font-bold block mb-8">
+
+Premium Fashion Brand
+
+</span>
+
+
+
+<h1 class="text-7xl md:text-[140px] font-display italic leading-none mb-10">
+
+Wear
+
+<br>
+
+Confidence.
+
+</h1>
+
+
+
+
+<div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+
+
+<a href="#collection"
+
+class="bg-white text-black px-12 py-6 rounded-full uppercase tracking-widest font-black hover:bg-gold transition">
+
+Explore Collection
+
+</a>
+
+
+<p class="text-white/40 text-xs tracking-widest uppercase max-w-xs text-left border-l border-white/20 pl-6">
+
+Modern clothing crafted for your lifestyle.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</header>
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="py-40 bg-dark">
+
+<div class="container mx-auto px-10 grid md:grid-cols-2 gap-20 items-center">
+
+
+<div>
+
+<h2 class="text-6xl font-display italic text-gold mb-8">
+
+Our Story
+
+</h2>
+
+
+<p class="text-gray-400 text-lg leading-loose">
+
+KHAN CLOTHES is a premium fashion brand created for people who believe
+style is a reflection of confidence. We focus on quality fabrics,
+modern designs, and timeless fashion.
+
+</p>
+
+
+
+<div class="grid grid-cols-2 gap-10 mt-12">
+
+
+<div>
+
+<h3 class="text-5xl font-display">
+
+100%
+
+</h3>
+
+<p class="text-gold text-xs uppercase tracking-widest mt-3">
+
+Quality
+
+</p>
+
+
+</div>
+
+
+
+<div>
+
+<h3 class="text-5xl font-display">
+
+2026
+
+</h3>
+
+<p class="text-gold text-xs uppercase tracking-widest mt-3">
+
+Collection
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<div class="h-[600px] rounded-[50px] overflow-hidden">
+
+
+<img
+
+src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900"
+
+class="w-full h-full object-cover hover:scale-110 transition duration-1000"
+
+/>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= COLLECTION ================= -->
+
+
+<section id="collection" class="py-40 container mx-auto px-6">
+
+
+
+<div class="text-center mb-24">
+
+
+<h2 class="text-7xl font-display italic">
+
+Featured Collection
+
+</h2>
+
+
+
+<p class="text-gray-500 uppercase tracking-[.5em] text-xs mt-5">
+
+Premium Fashion Essentials
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="grid md:grid-cols-3 gap-16">
+
+
+
+
+
+<div class="premium-card rounded-[50px] p-8">
+
+
+<div class="h-[400px] rounded-[40px] bg-black border border-white/10 flex items-center justify-center">
+
+
+<h3 class="text-gold tracking-widest">
+
+COMING SOON
+
+</h3>
+
+
+</div>
+
+
+
+<div class="text-center mt-8">
+
+
+<h3 class="text-3xl font-display">
+
+Luxury Shirts
+
+</h3>
+
+
+<p class="text-gray-500 mt-3">
+
+Premium Collection
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="premium-card rounded-[50px] p-8">
+
+
+<div class="h-[400px] rounded-[40px] bg-black border border-white/10 flex items-center justify-center">
+
+
+<h3 class="text-gold tracking-widest">
+
+COMING SOON
+
+</h3>
+
+
+</div>
+
+
+
+<div class="text-center mt-8">
+
+
+<h3 class="text-3xl font-display">
+
+Classic Wear
+
+</h3>
+
+
+<p class="text-gray-500 mt-3">
+
+New Arrivals
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card rounded-[50px] p-8">
+
+
+<div class="h-[400px] rounded-[40px] bg-black border border-white/10 flex items-center justify-center">
+
+
+<h3 class="text-gold tracking-widest">
+
+COMING SOON
+
+</h3>
+
+
+</div>
+
+
+
+<div class="text-center mt-8">
+
+
+<h3 class="text-3xl font-display">
+
+Exclusive Line
+
+</h3>
+
+
+<p class="text-gray-500 mt-3">
+
+Luxury Designs
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer id="contact" class="py-40 bg-[#080808] border-t border-white/10">
+
+
+<div class="container mx-auto px-10 text-center">
+
+
+<h2 class="text-7xl font-display italic mb-8">
+
+KHAN CLOTHES
+
+</h2>
+
+
+
+<p class="text-gray-500 uppercase tracking-widest text-xs mb-20">
+
+Premium Fashion Brand
+
+</p>
+
+
+
+
+
+<div class="flex flex-wrap justify-center gap-20 text-xs uppercase tracking-widest text-gray-400">
+
+
+<div>
+
+<p class="text-gold mb-4">
+
+Location
+
+</p>
+
+<p>
+
+Pakistan
+
+</p>
+
+
+</div>
+
+
+
+
+<div>
+
+<p class="text-gold mb-4">
+
+WhatsApp
+
+</p>
+
+<p>
+
++92 304 7469859
+
+</p>
+
+
+</div>
+
+
+
+
+<div>
+
+<p class="text-gold mb-4">
+
+Support
+
+</p>
+
+<p>
+
+Online Store
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="mt-40 opacity-30 text-[10px] tracking-[1em] uppercase">
+
+Developed by Abdullah Coder © 2026
+
+</div>
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+
+<script>
+
+
+ScrollReveal().reveal('h1',{
+
+distance:'80px',
+
+origin:'top',
+
+duration:1500
+
+});
+
+
+
+ScrollReveal().reveal('section',{
+
+distance:'60px',
+
+origin:'bottom',
+
+duration:1200
+
+});
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
